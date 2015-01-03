@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.squallium.androidcommons.inapp</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>library</artifactId>
+	<version>1.0.0</version>
+	<packaging>apklib</packaging>
+	<name>Android Commons In-App Library</name>
+
+	<dependencies>
+		<!-- Android Libraries -->
+		<dependency>
+			<groupId>android.support</groupId>
+			<artifactId>compatibility-v4</artifactId>
+			<version>21.0.3</version>
+		</dependency>
+		
+		<!-- Amazon Libraries -->
+		<dependency>
+			<groupId>com.amazon.inapp.purchasing</groupId>
+			<artifactId>in-app-purchasing</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
